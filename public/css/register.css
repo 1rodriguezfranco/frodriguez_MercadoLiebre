@@ -1,0 +1,43 @@
+form{
+    background-color: rgba(225, 225, 225, 0.912);
+    padding: 10px 25px 10px 25px;
+    font-size: 14px;
+    margin-top: 19vh;
+}
+
+.campo{
+    padding: 15px 0px;
+}
+
+.campo input, .campo textarea{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+
+.campo-checkbox label{
+    width: 80%;
+}
+.campo-checkbox input{
+    width: 15%;
+}
+.campo-checkbox{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.error{
+    display: none;
+}
+
+input:focus{
+    color: 0044AA
+}
+
+@media (min-width: 769px){
+    form{
+        margin-top: 18%;
+    }
+}

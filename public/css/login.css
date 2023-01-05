@@ -1,0 +1,34 @@
+form{
+    background-color: rgba(225, 225, 225, 0.912);
+    padding: 10px 25px 10px 25px;
+    font-size: 14px;
+    margin-top: 19vh;
+}
+
+.campo{
+    padding: 20px 50px;
+}
+
+.campo input, .campo button{
+    width: 100%;
+    height: 30px;
+}
+
+.campo button:hover {
+    background-color: #0022AA;
+    color: white;
+}
+
+.error{
+    display: none;
+}
+
+input:focus{
+    color: 0044AA
+}
+
+@media (min-width: 769px){
+    form{
+        margin-top: 18%;
+    }
+}

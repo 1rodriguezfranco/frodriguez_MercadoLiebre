@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: #EAC926;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+header div.logo{
+    width: 40%;
+    padding: 5px;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.site-navbar, .login-navbar{
+    display: none;
+    padding: 0px 0px 10px 8px;
+}
+
+.form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 100%;
+    font-size: 0.75rem;
+    height: 20px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 20px;
+    height: 20px;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 10%;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 8px 0px 15px 0px;
+    padding: 8px;
+    width: 35px;
+}
+
+.banner{
+    margin-top: 19vh;
+}
+
+.price{
+    font-size: 18px;
+    width: 50%;
+}
+
+.discount{
+    width: 50%;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+
+.last-visit .products article .main-article .description{
+    display: none;
+    margin-top: 20px;
+    transition: display 0.5s;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+.main-article{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 500ms;
+}
+
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+footer section ul li{
+    font-weight: bold;
+}
+footer section{
+    text-align: center;
+    padding: 5px 20px 10px 20px;
+}
+#card, #gift, #security{
+    color: #0044AA;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+
+@media (min-width: 361px){
+    .form{
+        width: 50vw;
+    }
+    .site-navbar, .login-navbar{
+        display: block;
+        display: flex;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav ul li{
+        margin: 7px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .products article{
+        width: 45%;
+    }
+    .price, .discount{
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 769px){
+    .form{
+        width: 400px;
+    }
+    .banner{
+        margin-top: 18%;
+    }
+    .products article{
+        width: 20%;
+    }
+    .last-visit .products article:hover .main-article i{
+        transform: rotate(-100grad);
+    }
+    .last-visit .products article:hover .main-article .description{
+        display: block;
+    }
+    .last-visit .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer section{
+        width: 33%;
+    }
+    footer section #card:hover{
+        color: #cfb015;
+    }
+    footer section #gift:hover{
+        color: rgb(207, 21, 21);
+    }
+    footer section #security:hover{
+        color: #39b54a;
+    }
+}
