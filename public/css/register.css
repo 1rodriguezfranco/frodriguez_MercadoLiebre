@@ -2,7 +2,7 @@ form{
     background-color: rgba(225, 225, 225, 0.912);
     padding: 10px 25px 10px 25px;
     font-size: 14px;
-    margin-top: 19vh;
+    margin-top: 154.8px;
 }
 
 .campo{
@@ -35,6 +35,13 @@ form{
 input:focus{
     color: 0044AA
 }
+
+@media (min-width: 460px){
+    form{
+        margin-top: 145.9px;
+    }
+}
+
 
 @media (min-width: 769px){
     form{

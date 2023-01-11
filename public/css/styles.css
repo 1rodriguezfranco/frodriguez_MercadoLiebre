@@ -100,10 +100,6 @@ div.burger-menu i{
     width: 35px;
 }
 
-.banner{
-    margin-top: 19vh;
-}
-
 .price{
     font-size: 18px;
     width: 50%;
@@ -137,8 +133,13 @@ h3,
     transition: display 0.5s;
 }
 
-section.banner img{
+.banner{
     width: 100%;
+    margin-top: 156px;
+}
+.banner img{
+    width: 100%;
+    height: 22vw;
 }
 
 main{
@@ -200,7 +201,8 @@ footer section{
 }
 #card, #gift, #security{
     color: #0044AA;
-    font-size: 25px;
+    font-size: 2em;
+    margin-bottom: 10px;
     transition: all 0.3s;
 }
 
@@ -234,15 +236,34 @@ footer section{
 }
 
 
+@media (min-width: 361px){
+    .banner{
+        margin-top: 143px;
+    }
+}
+
+
 @media (min-width: 769px){
+    header div.logo{
+        width: 301px;
+        height: 89.6px;
+        padding: 5px;
+    }
     .form{
         width: 400px;
     }
     .banner{
-        margin-top: 18%;
+        margin-top: 167px;
+    }
+    .banner img{
+        height: 165px;
     }
     .products article{
-        width: 20%;
+        width: 24%;
+    }
+    .products article .main-article .discount{ 
+        position: relative;
+        left: 15px;
     }
     .last-visit .products article:hover .main-article i{
         transform: rotate(-100grad);
